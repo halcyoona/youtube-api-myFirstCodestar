@@ -42,7 +42,7 @@
   "scripts": {
     "start": "node app.js",
     "type": "module",
-    "test": "nyc mocha --recursive tests --exit",
+    "test": "find ./tests -name 'test.js' | xargs mocha -R spec",
     "offline": "serverless offline --stage npr",
     "debug": "SET SLS_DEBUG=* && node --inspect node_modules/serverless/bin/serverless offline --stage npr"
   },
