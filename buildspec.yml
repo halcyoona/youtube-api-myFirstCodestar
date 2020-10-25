@@ -7,7 +7,6 @@ phases:
     commands:
       # Install dependencies needed for running tests
       - npm install
-      - npm install mocha
 
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
