@@ -29,7 +29,7 @@ Resources:
     Properties:
       FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-HelloWorld'
       Handler: index.handler
-      Runtime: nodejs12.x
+      Runtime: nodejs10.x
       Environment:
         Variables:
           NODE_ENV: production
